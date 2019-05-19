@@ -202,6 +202,11 @@ header{
     margin: 0.5em 0;
     border-radius: 0.35em;
 }
+.btn:hover{
+    outline: 3px dashed #fff;
+    outline-offset: -10px;
+    transition: outline-offset .2s ease-in-out;
+}
 .btn-primary{
     background-color: var(--clr-primary);
 }
@@ -315,7 +320,7 @@ footer a{
     width: 100%;
 }
 .product:hover .hover-on-order{
-    opacity: 1;
+    transform: scale(1,1);
 
 }
 .hover-on-order{
@@ -328,8 +333,8 @@ footer a{
     height: 100%;
     width: 100%;
     color: #fff;
-    opacity: 0;
-    transition:.2s ease-in-out;
+    transform: scale(0,1);
+    transition:transform .2s ease-in-out;
 }
 .hover-on-order:before{
     content: "";
@@ -355,7 +360,6 @@ footer a{
 }
 .hover-on-order h3::before{
     display: inline-block;
-    opacity:1;
     content: "";
     width: 100%;
     height:3px;
@@ -375,7 +379,6 @@ footer a{
 }
 .hover-on-order h3::after{
     display: inline-block;
-    opacity:1;
     content: "";
     width:100%;
     height:3px;
