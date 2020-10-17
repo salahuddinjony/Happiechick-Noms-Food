@@ -131,7 +131,7 @@ text-align: center;
 }
 .logo a{
 text-decoration: none;
-color: black;
+color: purple;
 }
 section{
 padding: 3em 1em;
@@ -314,7 +314,7 @@ padding:1em;
 margin: 0;
 padding: 0;
 display: flex;
-margin-top: 2em;
+margin-top: 1.8em;
 justify-content:center;
 }
 .image-hover{
